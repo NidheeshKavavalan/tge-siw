@@ -18,9 +18,6 @@ body {
 #base .chapter .l1 .w1 {
   display: inline-block;
 }
-#base #c1 {
-  display: block;
-}
 #base #c1 .l1 .w1 {
   display: block;
   text-align: center;
@@ -111,16 +108,110 @@ body {
 }
 #base #c2 .l1 {
   padding: 20px;
-  font-size: 160px;
   right: 0;
   width: 100%;
   height: 100vh;
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: center;
 }
 #base #c2 .l1 .w {
-  display: block;
+  display: none;
   text-align: left;
   width: 100%;
+}
+#base #c2 .l1 .w1 {
+  display: block;
+  font-size: 180px;
+}
+#base #c2 .l1 .w2,
+#base #c2 .l1 .w3,
+#base #c2 .l1 .w4,
+#base #c2 .l1 .w5 {
+  font-size: 65px;
+}
+@media (min-width: 600px) {
+  #base #c2 .l1 .w2 {
+    display: block !important;
+  }
+}
+@media (min-width: 750px) {
+  #base #c2 .l1 .w3 {
+    display: block !important;
+  }
+}
+@media (min-width: 900px) {
+  #base #c2 .l1 .w4 {
+    display: block !important;
+  }
+}
+@media (min-width: 1050px) {
+  #base #c2 .l1 .w5 {
+    display: block !important;
+  }
+}
+@media (min-height: 300px) {
+  #base #c2 .l1 {
+    display: none;
+  }
+  #base #c2 .l2 {
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    display: block;
+    justify-content: center;
+  }
+  #base #c2 .l2 .w1 {
+    visbility: visible !important;
+  }
+  #base #c2 .l2 .w2,
+  #base #c2 .l2 .w3,
+  #base #c2 .l2 .w4 {
+    visibility: hidden !important;
+  }
+  #base #c2 .l2 .w {
+    display: block;
+    text-align: left;
+    width: 100%;
+    font-size: 190px;
+    padding-left: 20px;
+  }
+}
+@media (min-height: 450px) {
+  #base #c2 .l2 .w2 {
+    visibility: visible !important;
+  }
+  #base #c2 .l2 .w1,
+  #base #c2 .l2 .w3,
+  #base #c2 .l2 .w4 {
+    visibility: hidden !important;
+  }
+}
+@media (min-height: 600px) {
+  #base #c2 .l2 .w3 {
+    visibility: visible !important;
+  }
+  #base #c2 .l2 .w1,
+  #base #c2 .l2 .w2,
+  #base #c2 .l2 .w4 {
+    visibility: hidden !important;
+  }
+}
+@media (min-height: 750px) {
+  #base #c2 .l2 .w4 {
+    visibility: visible !important;
+  }
+  #base #c2 .l2 .w1,
+  #base #c2 .l2 .w2,
+  #base #c2 .l2 .w3 {
+    visibility: hidden !important;
+  }
+}
+@media (min-height: 830px) {
+  #base #c2 .l2 .w1,
+  #base #c2 .l2 .w2,
+  #base #c2 .l2 .w3,
+  #base #c2 .l2 .w4 {
+    visibility: visible !important;
+  }
 }
