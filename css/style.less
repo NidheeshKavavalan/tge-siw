@@ -8,6 +8,9 @@
              src: url('GT America/GT-America-Compressed-Bold.otf') format('opentype'); }
 @font-face { font-family: 'GT America Bold Extended'; 
              src: url('GT America/GT-America-Extended-Bold.otf') format('opentype'); }
+@font-face { font-family: 'GT America Bold Compressed'; 
+             src: url('GT America/GT-America-Compressed-Bold.otf') format('opentype'); }
+
 
 body {
 
@@ -24,9 +27,6 @@ body {
     .w {
       display: none;
       font-size: 40px;
-    }
-    .l1 .w1 {
-      display: inline-block;
     }
   }
 
@@ -97,10 +97,10 @@ body {
           display: flex;
           align-items: center;
           justify-content: center;
-          .w {
-            text-align: left;
-            width: 100%;
-          }
+            .w {
+              text-align: left;
+              width: 100%;
+            }
         }
       }
     }
@@ -129,12 +129,12 @@ body {
         display: block;
         width: 100%;
         padding: 150px 40px 40px 40px;
-        .w {
-          font-weight: bold;
-          font-size: 220px!important;
-          opacity: 0 ;
-          padding-top: 0;
-        }
+          .w {
+            font-weight: bold;
+            font-size: 220px!important;
+            opacity: 0 ;
+            padding-top: 0;
+          }
         .w2 {
         opacity: 1 !important;
         }
@@ -146,7 +146,6 @@ body {
       opacity: 1 !important;
       }
     }
-
    @media (min-width: 1200px) {
       .l1 .u2 .w5{
       opacity: 1 !important;
@@ -171,35 +170,28 @@ body {
         font-size: 70px;
         text-transform: uppercase;
         display: none;
-        text-align: left;
-       
-
-       
+        text-align: left;    
       }
       .w1 {
         text-decoration: underline;
         display: block;
       }
      
-
       @media (min-width: 500px) {
         .w2 {
           display: block !important;
-        }
-       
+        } 
       }
 
       @media (min-width: 650px) {
         .w3 {
           display: block !important;
-   
         }
       }
 
       @media (min-width: 900px) {
         .w4 {
-            display: block !important;
-      
+          display: block !important;   
         }
       }
 
@@ -267,6 +259,8 @@ body {
     @media (min-height: 750px) {
       .l2 {
         .w4 {
+          text-decoration: underline;
+          color: blue;
           visibility: visible !important;
         }
         .w1, .w2, .w3 {
@@ -281,6 +275,107 @@ body {
       img {
         width: 100% !important;
       }
-      }
+    }
 
+  #c3 {
+  display: inline;
+  
+  color: white;
+
+    .l1 {
+    background-color: black;
+        .w1 {
+          display: block;
+          text-align: center;
+          width: 100%;
+          height: 100vh ;
+          line-height: 87vh;
+          vertical-align: middle;
+          font-size: 80px;
+          font-family:'GT America Bold Compressed'
+      }
+     }
+
+    @media (min-width: 450px) {
+      .l1 {
+        .w1 {
+          display: none; 
+          }
+         .w2 {
+            display: block;
+            text-align: center;
+            width: 100%;
+            height: 100vh ;
+            line-height: 87vh;
+            vertical-align: middle;
+            font-size: 80px;
+            font-family:'GT America Bold Compressed'
+          }
+        }
+      }
+    @media (min-width: 650px) {
+      .l1 {
+        .w2 {
+          display: none; 
+          }
+         .w3 {
+            display: block;
+            text-align: center;
+            width: 100%;
+            height: 100vh ;
+            line-height: 87vh;
+            vertical-align: middle;
+            font-size: 80px;
+            font-family:'GT America Bold Compressed'
+          }
+        }
+      }
+    @media (min-width: 850px) {
+    .l1 {
+      height: 100vh;
+      width: 3640px;
+      .w3 {
+         display: none;
+        }
+      .u1 {
+        width: 3600px;
+        position: absolute;
+        top: 50%;
+        left: 40px;
+        transform: translate(0%,-50%);
+             .w4 {
+              display: inline-block;
+              text-align: center;
+              vertical-align: middle;
+              font-size: 250px;
+              font-family:'GT America Bold Compressed';
+              -webkit-animation-name: colorchange; 
+              -webkit-animation-duration: 4s; 
+              -webkit-animation-iteration-count: infinite; 
+            } 
+            .w5 {
+              display: inline-block;
+              text-align: center;
+              padding-left: 100px;
+              vertical-align: middle;
+              font-size: 250px;
+              font-family:'GT America Bold Compressed';
+            }
+          }
+        }
+      @-webkit-keyframes colorchange {
+        0%   {color:red;}
+        25%  {color:yellow;}
+        50%  {color:blue;}
+        75%  {color:green;}
+        100% {color:red;}
+      }
+    }  
+  }
 }
+
+
+
+
+
+
