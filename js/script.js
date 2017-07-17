@@ -10,11 +10,11 @@ $(function() {
   $('#c1 .l1 .w1').fitText(0.15);
   $(window).resize(function () {
     if ($(window).width() >= screen.width * 0.64 && !opened1) {
-      win2 = window.open("third.html", "_blank", "width=300, height=225, left=1000, top=700");
+      win2 = window.open("second.html", "_blank", "width=300, height=225, left=1000, top=700");
       opened1 = true;
     }
-    if ($(window).width() >= screen.width * 0.76 && opened2) {
-      win1 = window.open("second.html", "_blank", "width=370, height=200, left=1500, top=25");
+    if ($(window).width() >= screen.width * 0.76 && !opened2 && opened1) {
+      win1 = window.open("third.html", "_blank", "width=370, height=200, left=1500, top=25");
       opened2 = true;
     }
   });
